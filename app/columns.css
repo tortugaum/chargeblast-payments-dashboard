@@ -1,0 +1,15 @@
+.resizable-table { table-layout: fixed; min-width: 0; }
+.resizable-table .column-heading { position: relative; padding: 0 8px 0 2px; }
+.column-heading-inner { display: flex; align-items: center; gap: 3px; min-width: 0; white-space: nowrap; }
+.column-heading-inner > span, .column-heading-inner .sort-button { overflow: hidden; text-overflow: ellipsis; }
+.column-grip { flex: none; display: inline-flex; align-items: center; justify-content: center; width: 17px; height: 24px; padding: 0; border: 0; background: transparent; color: #a4acb8; cursor: grab; }
+.column-grip:hover, .column-grip:focus-visible { color: #635bff; }
+.column-grip:active { cursor: grabbing; }
+.column-dragging { opacity: .45; }
+.column-resizer { position: absolute; z-index: 1; top: 4px; right: -4px; bottom: 4px; width: 8px; cursor: col-resize; touch-action: none; }
+.column-resizer:after { content: ""; position: absolute; top: 5px; bottom: 5px; left: 3px; width: 2px; border-radius: 1px; background: transparent; }
+.column-resizer:hover:after, .column-resizer:focus-visible:after { background: #8d86ff; }
+.resizable-table td { overflow: hidden; text-overflow: ellipsis; }
+.resizable-table td:has(.date-tooltip:focus), .resizable-table td:has(.date-tooltip:hover) { overflow: visible; }
+.column-help { left: auto; right: 0; width: 250px; }
+.column-help p { color: #697386; font-size: 12px; line-height: 1.5; margin: 0 2px 12px; }

@@ -1,0 +1,9 @@
+node_modules
+.next
+.next-dev
+out
+coverage
+.vercel
+*.tsbuildinfo
+.env*
+1794939714503-Chargeblast_Front-End_Project__Stripe_Payments_Screen.pdf
